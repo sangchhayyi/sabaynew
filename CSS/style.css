@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang&family=Koulen&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --font-size: 20px;
+  --pink: #fa1939;
+  --green: #38c378;
+  --lightpink: #fa5480;
+  --yellow: #f9a62b;
+  --blue: #4390f8;
+  --red:#F2272F;
+  --font1: Battambang;
+  --font2: Koulen;
+}
+.banner {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.banner .logo {
+  width: 65%;
+  height: 80%;
+  //background-color: aqua;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--pink);
+}
+.navbar .nav {
+  width: 65%;
+  height: 60px;
+  //background-color: red;
+  margin: auto;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+.nav ul,li {
+  padding: 7px 20px;
+}
+.nav ul,li,a {
+  text-decoration: none;
+  font-size: var(--font-size);
+  font-family: var(--font2);
+  color: white;
+  opacity: 0.7;
+}
+.nav ul,li,a:hover {
+  opacity: 1;
+}
+.nav ul li .active {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  opacity: 0.6;
+}
+.container {
+  width: 100%;
+  height: 370vh;
+  //background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.container .box1 {
+  width: 65%;
+  height: 39%;
+  // background-color: aquamarine;
+  margin: auto;
+}
+.container .box2 {
+  width: 65%;
+  height: 59%;
+  //background-color: darkgreen;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box1 .picture {
+  width: 100%;
+  height: 39%;
+  //background-color: rgb(199, 195, 195);
+  display: flex;
+  justify-content: space-between;
+}
+.box1 .video {
+  width: 100%;
+  height: 60%;
+  background-color:white;
+  margin: 14px 0px;
+  box-shadow: 5px 5px 10px rgb(182, 180, 180);
+}
+.picture .news { 
+  width: 70%;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: var(--font1);
+  color: white;
+}
+.picture .ABA {
+  width: 29%;
+  height: 100%;
+  //background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ABA .small-box {
+  width: 100%;
+  height: 49%;
+  background-color: bisque;
+}
+.news .content1 {
+  width: 60%;
+  height: 50%;
+  background-color: red;
+  position: relative;
+}
+.news .content2 {
+  width: 40%;
+  height: 50%;
+  background-color: pink;
+  position: relative;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content1 .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+.content1 .text {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  padding: 0px 20px;
+  overflow: hidden;
+  opacity: 0.9;
+}
+.content1:hover .text {
+  height: 150px;
+  top: 27%;
+  transition: 0.4s;
+}
+.news:hover h2{
+  color: #fa1939;
+}
+.content2 .overlay1{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+}
+.content2 .text2{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  padding: 0px 20px;
+  opacity: 0.9;
+  overflow: hidden;
+}
+.content2:hover .text2{
+  height:190px ;
+  top: 17%;
+  transition: 0.4s;
+}
+.content1 .date{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 85%;
+  padding: 0px 20px;
+}
+.content2 .date2{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 85%;
+  padding: 0px 20px;
+}
+.content1 .pin{
+  width: 100px;
+  height: 30px;
+  background-color: #f9a62b;
+  position: absolute;
+  top: 5%;
+  text-align: center;
+}
+.content1 .pin1{
+  width: 23px;
+  height: 30px;
+  background-color: #f9a62b;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  position: absolute;
+  top: 5%;
+  left: 19.74%;
+}
+.content2 .pin-box{
+  width: 100px;
+  height: 30px;
+  background-color: var(--green);
+  position: absolute;
+  top: 5%;
+}
+.content2 .pin-box1{
+  width: 23px;
+  height: 30px;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: var(--green);
+  position: absolute;
+  top: 5%;
+  left: 29.62%;
+}
+.video .border{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border: 3px solid var(--pink);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: flex;
+}
+.border .banner2{
+  width: 100px;
+  height: 100%;
+  background-color:var(--red) ;
+  font-family: var(--font2);
+  color: white;
+  text-align: center;
+  padding:10px 0 ;
+}
+.border .pin3{
+  width: 40px;
+  height: 100%;
+  background-color: var(--red);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.video .container2{
+  width: 95%;
+  height: 90%;
+  background-color:white;
+  margin: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: var(--font1);
+}
+.container2 .news1{
+  width: 33.2%;
+  height: 40%;
+  background-color: white;
+}
+.news1 .pic{
+  width: 100%;
+  height:70% ;
+  transition: 0.4s;
+}
+.pic:hover{
+  transform: scale(0.95);
+  transition: 0.4s;
+}
+.news1 .caption{
+  width: 100%;
+  height: 30%;
+  padding: 5px;
+  color: black;
+  font-family: var(--font1);
+}
+.container2 .news2{
+  width: 35%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container2 .news3{
+  width: 29.50%;
+  height: 60%;
+}
+.news2 .box4{
+  width: 48%;
+  height: 48%;
+  //background-color: aquamarine;
+}
+.box4 .pic2{
+  width: 100%;
+  height: 60%;
+  transition: 0.4s;
+}
+.box4 .caption2{
+  width: 100%;
+  height: 40%;
+}
+.pic2:hover{
+  transform: scale(0.95);
+  transition: 0.4s;
+}
+.a{
+  padding-left: 18px;
+}
+.news3 .sponsor{
+  width: 100%;
+  height: 20%;
+  padding: 10px 20px;
+}
+.box2 .other{
+  width: 100%;
+  height: 24.50%;
+  background-color: lavender;
+  transition: 0.4s;
+}
+.other .line{
+  width: 100%;
+  height: 10%;
+  border: 4px solid var(--lightpink);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  display: flex;
+}
+.line .line1{
+  width: 120px;
+  height: 100%;
+  background-color: var(--lightpink);
+  padding: 7px 30px;
+}
+.line .line2{
+  width: 30px;
+  height: 100%;
+  background-color: var(--lightpink);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.other .concept{
+  width: 95%;
+  height: 80%;
+ //background-color: chartreuse;
+  margin: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.concept .concept1{
+  width: 33%;
+  height: 100%;
+  background-color: white;
+}
+.concept1 .pic-box{
+  width: 100%;
+  height: 65%;
+}
+.concept1 .caption-box{
+  width: 100%;
+  height: 35%;
+  background-color: var(--lightpink);
+  font-family: var(--font1);
+  padding:10px 20px;
+}
+.pic-box:hover{
+  transform: scale(0.95);
+  transition: 0.4s;
+}
+.concept .concept2{
+  width:66% ;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+.concept2 .small-concept{
+  width: 24%;
+  height: 49%;
+}
+.small-concept .pic-box2{
+  width: 100%;
+  height: 60%;
+}
+.small-concept .caption-box2{
+  width: 100%;
+  height: 40%;
+  font-family: var(--font1);
+  color: black;
+  font-size: 15px;
+}
+.pic-box2:hover{
+  transform: scale(0.95);
+  transition: 0.4s;
+}
